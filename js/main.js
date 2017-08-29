@@ -59,20 +59,36 @@ $('#article-1 .primary-button').one('click', function(e){
     }, 800);
 });
 
-$('#article-2 .primary-button').one('click', function(){
+$('#article-2 .primary-button').one('click', function(e){
     $('#article-2 .primary-button').addClass('primary-button-click');
+
+    setTimeout(function(){
+      window.location.href = e.currentTarget.dataset.redirect;
+    }, 800);
 });
 
-$('#article-3 .primary-button').one('click', function(){
+$('#article-3 .primary-button').one('click', function(e){
     $('#article-3 .primary-button').addClass('primary-button-click');
+
+    setTimeout(function(){
+      window.location.href = e.currentTarget.dataset.redirect;
+    }, 800);
 });
 
-$('#article-4 .primary-button').one('click', function(){
+$('#article-4 .primary-button').one('click', function(e){
     $('#article-4 .primary-button').addClass('primary-button-click');
+
+    setTimeout(function(){
+      window.location.href = e.currentTarget.dataset.redirect;
+    }, 800);
 });
 
-$('#article-5 .primary-button').one('click', function(){
+$('#article-5 .primary-button').one('click', function(e){
     $('#article-5 .primary-button').addClass('primary-button-click');
+
+    setTimeout(function(){
+      window.location.href = e.currentTarget.dataset.redirect;
+    }, 800);
 });
 
 $('#subscribe .take-action-button').one('click', function(){
