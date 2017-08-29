@@ -1,42 +1,28 @@
 //Search, sort, and filter
 $(document).ready(function(){
-  $grid = $('.article-grid').shuffle({ itemSelector: '.article-wrapper' });
+  $('.no-results').hide();
   $('#search').on('keyup',function(){
     var search_term = $(this).val();
-    if(search_term.length > 0) {
-      $grid.shuffle('shuffle', filter_content(search_term));
-    }
+    filter_content(search_term);
   })
 });
 
 function filter_content(search_term) {
-  return $('.article-content').text().indexOf(search_term);
-}
-
-/*var shuffleInstance = new Shuffle(element, {
-  itemSelector: '.article-wrapper',
-  //sizer: sizer // could also be a selector: '.my-sizer-element'
-});
-
-//Search
-//Advanced filtering
-Demo.prototype.addSearchFilter = function () {
-  document.querySelector('#search').addEventListener('keyup', this._handleSearchKeyup.bind(this));
-};
-
-// Filter the shuffle instance by items with a title that matches the search input.
-Demo.prototype._handleSearchKeyup = function (evt) {
-  var searchText = evt.target.value.toLowerCase();
-
-  this.shuffle.filter(function (element, shuffle) {
-    var titleElement = element.querySelector('#article-1');
-    var titleText = titleElement.textContent.toLowerCase().trim();
-
-    return titleText.indexOf(searchText) !== -1;
+  $('.article-wrapper').each(function() {
+    var $article = $(this);
+    if($article.find('.col').text().indexOf(search_term) == -1) {
+      $article.parent('section').fadeOut();
+    } else {
+      $article.parent('section').fadeIn();
+    }
   });
-};*/
 
-
+  if($('.grid section:visible').length === 0) {
+    $('.no-results').show();
+  } else {
+    $('.no-results').hide();
+  }
+}
 
 //Toggle Our Sources
 $('#our-sources').click(function() {
