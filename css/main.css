@@ -45,7 +45,6 @@ body {
 }
 
 footer {
-  position: absolute;
   bottom: 0;
   background-color: #333333;
   height: 240px;
@@ -435,18 +434,36 @@ ul {
 }
 
 .icon-wrapper {
+  box-sizing: border-box;
   display: inline-block;
   height: 60px;
   margin-right: 5px;
   width: auto;
 }
 
+.icon-wrapper:before {
+  background: url('../icons/fact-check-logo.svg') no-repeat;
+  content: ' ';
+  display: block;
+  height: 60px;
+  width: 60px;
+}
+
 .icon-wrapper-small {
+  box-sizing: border-box;
   display: inline-block;
   height: 40px;
   margin-right: 5px;
   padding-top: 5px;
   width: auto;
+}
+
+.icon-wrapper-small:before {
+  background: url('../icons/fact-check-logo.svg') no-repeat;
+  content: ' ';
+  display: block;
+  height: 40px;
+  width: 40px;
 }
 
 .label-wrapper {
