@@ -789,12 +789,17 @@ select:focus {
 
 /*Media queries*/
 @media only screen and (max-width: 480px) {
-    .site-title {
-        font-size: 24px;
-        padding-top: 18px;
+  .site-title {
+    font-size: 24px;
+    padding-top: 18px;
 }
 
 @media only screen and (max-width: 480px) {
-    .homepage-title {
-        font-size: 24px;
+  .homepage-title {
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 480px) {
+  h2 {
+  padding: 0 0 0 0;
 }
