@@ -441,7 +441,7 @@ ul {
 }
 
 .icon-wrapper:before {
-  background: url('../icons/fact-check-logo.png') no-repeat;
+  background: url('../icons/fact-check-logo.svg') no-repeat;
   content: ' ';
   display: block;
   height: 60px;
@@ -458,7 +458,7 @@ ul {
 }
 
 .icon-wrapper-small:before {
-  background: url('../icons/fact-check-logo.png') no-repeat;
+  background: url('../icons/fact-check-logo.svg') no-repeat;
   content: ' ';
   display: block;
   height: 40px;
