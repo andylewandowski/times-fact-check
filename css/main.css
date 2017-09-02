@@ -720,6 +720,7 @@ ul {
 .article-grid {
   position: relative;
   min-height: 400px;
+  margin-left: -25px;
 }
 
 /*Forms inputs*/
