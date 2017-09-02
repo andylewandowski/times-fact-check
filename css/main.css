@@ -41,7 +41,6 @@ body {
 .wrapper {
   min-height: 100%;
   position: relative;
-  margin-left: -25px;
 }
 
 footer {
