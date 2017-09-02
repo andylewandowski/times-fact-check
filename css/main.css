@@ -725,6 +725,8 @@ ul {
 .fact-check-grid {
   margin-left: -25px;
   margin-right: -25px;
+  position: relative;
+  min-height: 100%;
 }
 
 /*Forms inputs*/
