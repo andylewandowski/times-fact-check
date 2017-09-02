@@ -557,7 +557,7 @@ ul {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0 0 20px 0;
-  padding: 5px;
+  padding: 5px -5px 5px 5px;
 }
 
 .truth-rating-wrapper {
@@ -725,7 +725,7 @@ ul {
 
 .fact-check-grid {
   margin-left: -25px;
-  margin-right: -20px;
+  margin-right: -25px;
 }
 
 /*Forms inputs*/
@@ -811,6 +811,6 @@ select:focus {
 
 @media only screen and (max-width: 480px) {
   hr {
-    width: 175px;
+    width: 200px;
   }
 }
