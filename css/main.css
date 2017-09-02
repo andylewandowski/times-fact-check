@@ -266,7 +266,7 @@ ul {
 }
 
 
-/*CSS link classes*/
+/*CSS link and underline classes*/
 .black-link {
   border-bottom: 3px solid black;
 }
@@ -330,6 +330,17 @@ ul {
 .red-link:visited {
   color: gray;
   border-bottom: 3px solid #FF606B;
+}
+
+.underline-gray {
+  border-bottom: 3px dotted #9D9C9C;
+}
+
+.underline-green {
+  border-bottom: 3px solid #65F286;
+}
+.underline-red {
+  border-bottom: 3px dashed #DF3E49;
 }
 
 
