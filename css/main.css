@@ -723,6 +723,11 @@ ul {
   margin-left: -25px;
 }
 
+.fact-check-grid {
+  margin-left: -25px;
+  margin-right: -20px;
+}
+
 /*Forms inputs*/
 input[type=search] {
   background-color: white;

@@ -10,7 +10,7 @@ function filter_content() {
   $('.article-wrapper').each(function() {
     var $article = $(this);
     var $article_section = $article.parent('section');
-    
+
     if(in_topics($article_section) && in_search_text($article)) {
       $article_section.fadeIn();
     } else {
@@ -34,7 +34,7 @@ function in_topics(article) {
 
   if(article.data('topics')) {
     var topics = article.data('topics').split(',');
-    return $.inArray(topic, topics) > -1;    
+    return $.inArray(topic, topics) > -1;
   } else {
     return false;
   }
@@ -62,7 +62,7 @@ function sort_content() {
 }
 
 function sort_by_date(a, b) {
-  var sort_direction = $('#date').val();    
+  var sort_direction = $('#date').val();
 
   if(sort_direction === 'newest') {
     return new Date(b.date) - new Date(a.date);
