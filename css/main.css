@@ -32,7 +32,6 @@ body {
   font-weight: 400;
   line-height: 1.6em;
   margin: 0;
-  min-height: 700px;
   padding-left: 0;
   padding-right: 0;
   padding-top: 75px;
@@ -42,6 +41,7 @@ body {
 .wrapper {
   min-height: 100%;
   position: relative;
+  margin-left: -25px;
 }
 
 footer {
@@ -59,7 +59,7 @@ h1 {
   font-size: 26px;
   line-height: 1.2em;
   margin-top: 0;
-  padding: 0;
+  padding: 10px 0 0 0;
   text-transform: capitalize;
 }
 
@@ -720,7 +720,7 @@ ul {
 
 .article-grid {
   position: relative;
-  padding-bottom: 260px;
+  min-height: 400px;
 }
 
 /*Forms inputs*/
@@ -802,4 +802,10 @@ select:focus {
 @media only screen and (max-width: 480px) {
   h2 {
   padding: 0 0 0 0;
+}
+
+@media only screen and (max-width: 480px) {
+  hr {
+    width: 175px;
+  }
 }
