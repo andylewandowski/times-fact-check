@@ -160,6 +160,11 @@ p {
   text-indent: 30px;
 }
 
+u {
+  border-bottom: 3px solid black;
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
   margin: 5px 0 0 0;
