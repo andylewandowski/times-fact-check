@@ -275,22 +275,12 @@ ul {
   color: #9D9C9C;
 }
 
-.black-link:visited {
-  color: gray;
-  border-bottom: 3px solid gray;
-}
-
 .blue-link {
   border-bottom: 3px solid #17A6EC;
 }
 
 .blue-link:hover {
   color: #17A6EC;
-}
-
-.blue-link:visited {
-  color: gray;
-  border-bottom: 3px solid #32BCFF;
 }
 
 .gray-link {
@@ -301,11 +291,6 @@ ul {
   color: #9D9C9C;
 }
 
-.gray-link:visited {
-  color: gray;
-  border-bottom: 3px solid gray;
-}
-
 .green-link {
   border-bottom: 3px solid #65F286;
 }
@@ -314,22 +299,12 @@ ul {
   color: #65F286;
 }
 
-.green-link:visited {
-  color: gray;
-  border-bottom: 3px solid #84FFA1;
-}
-
 .red-link {
   border-bottom: 3px dashed #DF3E49;
 }
 
 .red-link:hover {
   color: #DF3E49;
-}
-
-.red-link:visited {
-  color: gray;
-  border-bottom: 3px solid #FF606B;
 }
 
 .underline-gray {
