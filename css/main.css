@@ -21,6 +21,10 @@ a:hover {
   color: gray;
 }
 
+a:visited {
+  decoration: none;
+}
+
 html, body {
   height: calc(100% - 100px);
 }
