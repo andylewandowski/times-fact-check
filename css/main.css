@@ -730,7 +730,7 @@ input[type=search] {
   border: 2px solid gray;
   border-radius: 3px;
   box-sizing: border-box;
-  color: #333333;
+  color: gray;
   height: 50px;
   padding: 10px;
   position: relative;
@@ -746,7 +746,7 @@ input[type=search]:hover {
 
 input[type=search]:focus {
   border: 2px solid black;
-  color: #333333;
+  color: black;
 }
 
 input[type=search]::before {
@@ -802,11 +802,15 @@ select:focus {
 
 @media only screen and (max-width: 480px) {
   h2 {
-  padding: 0 0 0 0;
+  padding: 0 20px 0 20px;
 }
 
 @media only screen and (max-width: 480px) {
   hr {
     width: 200px;
-  }
+}
+
+@media only screen and (max-width: 480px) {
+  p {
+    text-indent: 20px;
 }
